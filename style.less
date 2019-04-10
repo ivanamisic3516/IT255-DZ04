@@ -1,0 +1,79 @@
+body{
+	margin: 0;
+	padding: 0;
+	@font-family: sans-serif;
+	font-size: 30px;
+	@text-align: center;
+	@color: white;
+	@text-decoration: none;
+	@background-color: black;
+	@opacity: .8;
+}
+.container{
+	max-width: 800px;
+	margin: auto;
+	position: relative;
+}
+.icon{
+	width: 25px;
+	line-height: 40px;
+	background: black;
+	color: @color;
+	text-align: @text-align;
+}
+.left{
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	transform: translate(0%,-50%);
+}
+.right{
+	position: absolute;
+	top: 50%;
+	right: 0%;
+	transform: translate(0%,-50%);
+}
+#h1{
+	margin: 0;
+	padding: 40px 60px 55px 44px;
+	font-weight: bold;
+	font-size: 50px;
+	color: #D76D6D;
+	text-align: @text-align;
+	background-color:@background-color;
+	opacity: @opacity;
+}
+#h2{
+	margin: 0;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 30px;
+	color: @color;
+	text-align: @text-align;
+	background-color: @background-color;
+	opacity: @opacity;
+}
+.nav ul{
+	list-style: none;
+	background: @background-color;
+	text-align: @text-align;
+	padding: 0;
+	margin: 0;
+	opacity: @opacity;
+}
+.nav li{
+	display: inline-block;
+}
+.nav a{
+	text-decoration: @text-decoration;
+	color: color;
+	width: 200px;
+	display: block;
+	padding: 15px;
+	font-size: 20px;
+	font-family: @font-family;
+}
+.nav a:hover{
+	background: #D76D6D;
+	transition: 0.4s;
+}

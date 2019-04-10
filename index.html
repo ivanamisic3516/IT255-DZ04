@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Online dostava hrane</title>
+		<link rel="icon" href="pig-icon.png" type="image/png"> 
+		<link href="style.css" rel="stylesheet" type="text/css" >
+		<style>
+		html{
+			background: url(slika.jpg)no-repeat center center fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		</style>
+	</head>
+<body id="idex">
+	<div class="nav">
+		<nav>
+		<ul>
+            <li><a href="#index">POCETNA</a></li>
+			<li><a href="#onama">O NAMA</a></li>
+			<li><a href="#kategorije">KATEGORIJE</a></li>		
+			<li><a href="#kontakt">KONTAKT</a></li>
+		</ul>
+		</nav>
+	</div>
+
+			<h1><p><strong>Gladni ste? Narucite hranu lakse!</strong></p></h1>
+			<p>Zaboravite na trazenje brojeva telefona restorana za kucnu dostavu! Povezali smo restorane na Internet i oni sada mogu primati i odgovarati na vase narudzbine na ovome sajtu. Ovaj servis je besplatan za vas, a hrana kosta isto kao kod narucivanja telefonom ili cak i manje!</p>
+			<div class="container">	
+					<img class="mySlides" src="pizza-min.jpg" style="width: 100%">
+					<img class="mySlides" src="palacinka-min.jpg" style="width: 100%">
+					<img class="mySlides" src="bbq-min.jpg" style="width: 100%">
+			</div>
+		<script>
+		var slideIndex = 0;
+				carousel();
+
+				function carousel() {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+				}
+				slideIndex++;
+				if (slideIndex > x.length) {slideIndex = 1}
+				x[slideIndex-1].style.display = "block";
+				setTimeout(carousel, 2000);
+				}
+		</script>
+	</body>
+</html>
